@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="list">
+      {JSON.stringify()}
+      {[...Array(10).keys()].map(key => (
+        <div key={key} className="card">
+          <img src="http://hd.wallpaperswide.com/thumbs/trees_winter_pink_sunset-t2.jpg" alt="img" />
+          <h3>title-{key}</h3>
+          <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s</h6>
+        </div>
+      ))}
     </div>
   );
 }
