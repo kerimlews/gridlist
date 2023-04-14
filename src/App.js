@@ -3,7 +3,6 @@ import './App.css';
 const App = () => {
   return (
     <div className="list">
-      {JSON.stringify()}
       {[...Array(10).keys()].map(key => (
         <div key={key} className="card">
           <img src="http://hd.wallpaperswide.com/thumbs/trees_winter_pink_sunset-t2.jpg" alt="img" />
